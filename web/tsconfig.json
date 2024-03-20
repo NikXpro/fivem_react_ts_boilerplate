@@ -17,14 +17,15 @@
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*", "./dist/*", ""],
-      "hooks/*": ["./src/hooks/*"],
-      "utils/*": ["./src/utils/*"],
-      "assets/*": ["./src/assets/*"],
-      "components/*": ["./src/components/*"],
-      "shared/*": ["./src/components/shared/*"],
-      "ui/*": ["./src/components/ui/*"],
-      "public/*": ["./public/*"]
+      "@/*": ["./src/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@providers/*": ["./src/providers/*"],
+      "@components/*": ["./src/components/*"],
+      "@shared/*": ["./src/components/shared/*"],
+      "@ui/*": ["./src/components/ui/*"],
+      "@public/*": ["./public/*"]
     }
   },
   "include": ["src"],

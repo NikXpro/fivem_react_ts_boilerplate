@@ -16,13 +16,23 @@ module.exports = {
     ],
   },
   settings: {
-    "import/extensions": [".js", ".ts"],
-    "import/parsers": {
-      "@typescript-eslint/parser": [".ts"],
+    react: {
+      version: "detect",
     },
     "import/resolver": {
       Node: {
         extensions: [".js", ".ts", ".jsx", ".tsx"],
+        map: [
+          ["@", "./src"],
+          ["@hooks", "./src/hooks"],
+          ["@utils", "./src/utils"],
+          ["@assets", "./src/assets"],
+          ["@providers", "./src/providers"],
+          ["@components", "./src/components"],
+          ["@shared", "./src/components/shared"],
+          ["@ui", "./src/components/ui"],
+          ["@public", "./public/"],
+        ],
       },
     },
   },
