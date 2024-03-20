@@ -15,4 +15,15 @@ module.exports = {
       { allowConstantExport: true },
     ],
   },
+  settings: {
+    "import/extensions": [".js", ".ts"],
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts"],
+    },
+    "import/resolver": {
+      node: {
+        extensions: [".js", ".ts", ".jsx", ".tsx"],
+      },
+    },
+  },
 };

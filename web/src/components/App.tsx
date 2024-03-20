@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./App.css";
 import { debugData } from "../utils/debugData";
 import { fetchNui } from "../utils/fetchNui";
+import "./App.css";
 
 // This will set the NUI to visible if we are
 // developing in browser

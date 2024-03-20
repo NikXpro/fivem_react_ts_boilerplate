@@ -1,10 +1,4 @@
-import React, {
-  Context,
-  createContext,
-  useContext,
-  useEffect,
-  useState,
-} from "react";
+import React, { createContext, useContext, useEffect, useState } from "react";
 import { useNuiEvent } from "../hooks/useNuiEvent";
 import { fetchNui } from "../utils/fetchNui";
 import { isEnvBrowser } from "../utils/misc";
@@ -58,7 +52,8 @@ export const VisibilityProvider: React.FC<{ children: React.ReactNode }> = ({
   );
 };
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const useVisibility = () =>
   useContext<VisibilityProviderValue>(
-    VisibilityCtx as Context<VisibilityProviderValue>,
+    VisibilityCtx as React.Context<VisibilityProviderValue>
   );
